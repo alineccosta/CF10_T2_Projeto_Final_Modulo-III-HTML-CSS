@@ -3,15 +3,35 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 25px;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #0D0D0D;
+    font-family: 'Poppins'
+
+
+}
+h1 {
+    color:#FFF;
+    font-size: 2em;
+
+}
+h2 {
+    color: #FFF;
 }
 h3 {
-    color: brown;
+    color: #FFF;
     text-align: start;
     padding: 32px;
+    font-size: 2em;
+    margin-top: 100px;
 }
 .header-menu{
-    background-color: rgb(218, 207, 228);
+    background-color: #0D0D0D;
     display: flex;
     position: fixed;
     width: 100%;
@@ -19,11 +39,13 @@ h3 {
     padding-top: 32px;
     padding-bottom: 32px;
     height: 10px;
+    z-index: 1000;
 }
 .header-menu nav{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    z-index: 1000;
 }
 .lista-menu{
     display: flex;
@@ -39,7 +61,7 @@ h3 {
 }
 .principal{
     display: flex;
-    background-color: blueviolet;
+    background-color: #0D0D0D;
     height: 100vh;
 }
 .subcontainer-principal{
@@ -50,17 +72,36 @@ h3 {
     text-align: center;
 }
 .div-img{
-    position: absolute;
-    top: 10%;
-    left: 30%;
+   width: 50%;
+   height: 50%;
+   position: relative;
+   z-index: 1;
+   max-width: 100%;
+   padding: 10px;
+   margin: 0 auto;
+   bottom: 20px;
+   top: 30px; 
+   margin: 30px;
+}
+.capa-portfolio img {
+    width: 700px;
+    height: auto; 
+    color:#FFF;
 
 }
+.capa-solis, .capa-corvo {
+    width: 10%; /* Imagens ocupam toda a largura do contêiner */
+    height: auto; /* Altura ajustável para manter a proporção */
+}
+
 .texto-1{
     padding: 32px;
+    text-align: left;
+    color:#FFF;
 }
 .principal-2{
     display: flex;
-    background-color: bisque;
+    background-color: #0D0D0D;
     height: 100vh;
     width: 100%;
 }
@@ -74,14 +115,29 @@ h3 {
     text-decoration: inherit;
 }
 .lista-item{
-    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+   
+}
+.jogo-item {
+    flex: 1 0 50%; /* Divide em duas colunas */
+    padding: 10px; /* Adiciona espaço entre os itens */
+    box-sizing: border-box; 
+}
+.lista-item p{
+    color:#FFF;
 }
 .lista-item ul li{
     margin-bottom: 52px;
 }
+.lista-item p, .lista-item img {
+    margin-top: 10px; 
+}
 .principal-3{
     display: flex;
-    background-color: aqua;
+    background-color: #0D0D0D;
     height: 100vh;
 }
 .subcontainer-principal3{
@@ -94,32 +150,52 @@ justify-content: space-evenly;
     text-decoration: inherit;
 }
 .footer{
-    background-color: antiquewhite;
+    background-color: #F3BD1D;
     display: flex;
     align-items: center;
-    height: 30vh;
+    height: 15vh;
+    width: 100%;
+    padding: 20px;
 }
 .Contato{
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 20px;
     max-width: 960px;
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
 }
-.lista-footer{
-    color: aqua;
-    font-weight: 700;
-    font-size: 18px;
+.lista-footer li{
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
     display: flex;
     align-items: center;
+    margin-left: 10px;
     
 }
+.lista-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-footer li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.lista-footer a {
+    color: #FFF; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
 .estilo-icon{
-    font-size: 22px;
-    margin-right: 10px;
+    margin-right: 25px;
+    font-size: 50px;
+}
+
+.estilo-icon:hover {
+    color: #493c15
 }
 .links{
-    color: rgb(39, 134, 216);
+    color: #FFF
     text-decoration: none;
 }
